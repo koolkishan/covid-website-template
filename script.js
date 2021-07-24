@@ -32,3 +32,19 @@ navbarToggle.addEventListener("click", () => {
     navBarState = true;
   }
 });
+
+const sr = ScrollReveal({
+  origin: "top",
+  distance: "80px",
+  duration: 2000,
+  reset: true,
+});
+
+sr.reveal(
+  `nav,.starter,.about
+  .contagion,.symptoms,
+  .solutions,.map,.contact,footer,span`,
+  {
+    interval: 200,
+  }
+);

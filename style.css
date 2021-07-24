@@ -759,6 +759,11 @@ footer .social-links i:hover {
     width: 100%;
     -webkit-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
+    z-index: 99;
+    -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 1rem 1rem;
+    padding: 2rem 0;
   }
   nav .links ul {
     -webkit-box-orient: vertical;
@@ -920,6 +925,11 @@ footer .social-links i:hover {
     width: 100%;
     -webkit-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
+    -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 1rem 1rem;
+    padding: 2rem 0;
+    z-index: 99;
   }
   nav .links ul {
     -webkit-box-orient: vertical;

@@ -3,7 +3,7 @@ const preloader = document.querySelector(".preloader");
 const bodyLoaded = () => {
   setTimeout(() => {
     preloader.style.display = "none";
-  }, 1000);
+  }, 2000);
 };
 
 const scrollToTop = document.querySelector(".scrollToTop");
@@ -41,10 +41,19 @@ const sr = ScrollReveal({
 });
 
 sr.reveal(
-  `nav,.starter,.about
+  `.starter,.about
   .contagion,.symptoms,
   .solutions,.map,.contact,footer,span`,
   {
     interval: 200,
   }
+);
+
+const navLinks = document.querySelectorAll("#nav-link");
+navLinks.forEach((link) =>
+  link.addEventListener("click", () => {
+    const navlinks = document.querySelector(".links");
+    navlinks.style.top = "-40rem";
+    navBarState = false;
+  })
 );

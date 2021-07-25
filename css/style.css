@@ -1,0 +1,1062 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  background-color: white;
+  width: 0.4rem;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #ef233c;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+ul,
+li,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  background-color: #ef233c;
+  border: none;
+  padding: 1.3rem 3rem;
+  border-radius: 3rem;
+  color: white;
+  font-size: larger;
+  font-weight: bold;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  border: 0.1rem solid transparent;
+}
+
+button:hover {
+  background-color: white;
+  border-color: #ef233c;
+  color: #ef233c;
+}
+
+h1 {
+  color: #248277;
+  font-size: 3em;
+}
+
+h2 {
+  color: #248277;
+  font-size: 2.2em;
+}
+
+h3 {
+  color: #ef233c;
+  font-size: 1.4em;
+}
+
+h4 {
+  color: #ef233c;
+  font-size: 1.2em;
+}
+
+h5 {
+  color: #747474;
+  font-weight: 500;
+  font-size: 1.15em;
+  letter-spacing: 0.05rem;
+  line-height: 1.7em;
+}
+
+p {
+  color: #747474;
+  font-size: 1.1em;
+  letter-spacing: 0.04em;
+  line-height: 1.5em;
+}
+
+a {
+  color: #248277;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  font-size: 1.3em;
+  margin: 0 2em;
+}
+
+a:hover {
+  color: #ef233c;
+}
+
+.info .title {
+  margin-top: 0.5rem;
+}
+
+.info .description {
+  margin: 1.2rem 0;
+}
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.preloader {
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../assets/preloader.gif");
+  background-size: 10rem;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: fixed;
+  background-color: white;
+  z-index: 5;
+}
+
+.scrollToTop {
+  height: 5rem;
+  width: 5rem;
+  background-color: #fce0e3;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  background-image: url("../assets/virus.png");
+  background-position: center center;
+  background-size: 3rem;
+  background-repeat: no-repeat;
+  border-radius: 4rem;
+  position: fixed;
+  bottom: 10px;
+  right: 25px;
+  cursor: pointer;
+  display: none;
+  z-index: 4;
+}
+
+nav {
+  margin: 0 2rem;
+  padding: 2rem;
+}
+
+nav .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav .container .brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav .container .brand .responsive-toggle {
+  display: none;
+}
+
+nav .container .links ul li:nth-child(1) a {
+  color: #ef233c;
+}
+
+nav .container .links ul li button {
+  background-color: white;
+  border: 0.1rem solid #ef233c;
+  color: #ef233c;
+}
+
+.starter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2rem 0;
+}
+
+.starter .info {
+  margin: 3rem 2rem 0 4rem;
+}
+
+.starter .info .title {
+  margin: 0.5rem 0 2rem 0;
+}
+
+.starter .info .description {
+  margin-bottom: 2rem;
+}
+
+.starter .image img {
+  max-width: 100%;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2rem 4rem;
+  gap: 5rem;
+}
+
+.about button {
+  background-color: #ffe6e8;
+  color: #ef233c;
+}
+
+.about .image img {
+  width: 40rem;
+}
+
+.contagion {
+  margin: 2rem 4rem;
+}
+
+.contagion .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contagion .info .description {
+  width: 40%;
+  text-align: center;
+}
+
+.contagion .content {
+  position: relative;
+}
+
+.contagion .content .virus {
+  position: absolute;
+  left: -0.5rem;
+  top: 7rem;
+}
+
+.contagion .content .virus img {
+  height: 20rem;
+}
+
+.contagion .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 4rem;
+  margin-top: 1rem;
+}
+
+.contagion .cards .card {
+  height: 25rem;
+  width: 20rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  border-bottom: 0.2rem solid white;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+          box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+.contagion .cards .card .text {
+  padding: 2rem;
+  text-align: center;
+}
+
+.contagion .cards .card .text .title {
+  margin-bottom: 1rem;
+}
+
+.contagion .cards .card img {
+  max-height: 8rem;
+}
+
+.contagion .cards .card:hover {
+  -webkit-box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+          box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  border-bottom: 0.2rem solid #ef233c;
+}
+
+.symptoms {
+  margin: 4rem;
+}
+
+.symptoms .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.symptoms .info .description {
+  width: 40%;
+  text-align: center;
+}
+
+.symptoms .image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.symptoms .image img {
+  width: 90%;
+}
+
+.solutions {
+  position: relative;
+}
+
+.solutions .virus {
+  position: absolute;
+  top: 34rem;
+}
+
+.solutions .virus img {
+  height: 12rem;
+}
+
+.solutions .virus2 {
+  position: absolute;
+  top: 104rem;
+  right: 0;
+}
+
+.solutions .virus2 img {
+  height: 12rem;
+}
+
+.solutions .virus3 {
+  position: absolute;
+  top: 99rem;
+  right: 2rem;
+}
+
+.solutions .virus3 img {
+  height: 6rem;
+}
+
+.solutions .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.solutions .info .description {
+  width: 40%;
+  text-align: center;
+}
+
+.solutions .content {
+  margin: 4rem 9rem;
+}
+
+.solutions .content .solution {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 5rem;
+}
+
+.solutions .content .solution .solution-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+}
+
+.solutions .content .solution .solution-info .round {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #ffe6e8;
+  color: #ef233c;
+  font-size: 2em;
+  border-radius: 100%;
+  height: 5rem;
+  width: 20rem;
+}
+
+.solutions .content .solution .solution-info .info-container .title {
+  margin-bottom: 0.5rem;
+}
+
+.solutions .content .solution .image img {
+  height: 30rem;
+}
+
+.map {
+  margin: 0rem 3rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+  gap: 3rem;
+}
+
+.map .image-container {
+  position: relative;
+}
+
+.map .image-container .image img {
+  height: 30rem;
+}
+
+.map .image-container .map-search {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  -webkit-box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+          box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  cursor: pointer;
+}
+
+.map .image-container .map-search i {
+  color: #ef233c;
+  font-size: 1.4rem;
+}
+
+.map .image-container .map-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 2rem;
+  position: absolute;
+  padding: 1rem;
+  background-color: white;
+  top: 0;
+  -webkit-box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+          box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  cursor: pointer;
+}
+
+.map .image-container .map-options i {
+  color: #494949;
+}
+
+.map .image-container .map-options .arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1rem 0;
+}
+
+.map .image-container .map-options .arrows i {
+  line-height: 0;
+  padding: 0;
+  margin: 0;
+  font-size: 2.4rem;
+}
+
+.map .image-container .map-options .arrows i:nth-of-type(1) {
+  color: #ef233c;
+}
+
+.map .image-container .map-options .arrows i:nth-of-type(2) {
+  color: gray;
+}
+
+.map .reports {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+          box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: 20rem;
+  padding: 2rem;
+}
+
+.map .reports .title-container {
+  margin-bottom: 1rem;
+}
+
+.map .reports .report-container .report {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 0.6rem;
+}
+
+.map .reports .report-container .report .country {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+}
+
+.map .reports .report-container .report .country h3 {
+  color: #248277;
+}
+
+.map .reports .report-container .report .country img {
+  height: 3rem;
+}
+
+.map .reports .report-container .report .numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+}
+
+.map .reports .report-container .report .numbers h4 {
+  color: #248277;
+}
+
+.map .reports .report-container .report .numbers i {
+  font-size: 2rem;
+}
+
+.map .reports .report-container .report .numbers .fa-sort-up {
+  margin-top: 0.8rem;
+  color: #ef233c;
+}
+
+.map .reports .report-container .report .numbers .fa-sort-down {
+  margin-bottom: 0.8rem;
+  color: #248277;
+}
+
+.contact {
+  margin: 2rem 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact .form {
+  margin-top: 2rem;
+  position: relative;
+}
+
+.contact .form input {
+  border-radius: 10rem;
+  width: 40rem;
+  border: none;
+  -webkit-box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+          box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  padding: 2rem;
+}
+
+.contact .form button {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.35rem;
+  padding: 1.4rem 4rem;
+}
+
+footer {
+  margin: 3rem 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .social-links i {
+  font-size: 1.4em;
+  margin: 0 0.7rem;
+  color: #248277;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+footer .social-links i:hover {
+  color: #ef233c;
+}
+
+.copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1rem 0;
+  color: #248277;
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 11px;
+  }
+  .virus,
+  .virus2,
+  .virus3 {
+    display: none;
+  }
+  .info .description {
+    width: 90% !important;
+  }
+  nav {
+    position: relative;
+    padding: 1rem;
+    margin: 0;
+  }
+  nav .responsive-toggle {
+    display: block !important;
+    position: absolute;
+    right: 2rem;
+  }
+  nav .responsive-toggle i {
+    font-size: 1.5rem;
+  }
+  nav .logo img {
+    height: 3rem;
+  }
+  nav .links {
+    position: absolute;
+    top: -40rem;
+    left: 0;
+    margin-top: 10rem;
+    background-color: white;
+    width: 100%;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    z-index: 99;
+    -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 1rem 1rem;
+    padding: 2rem 0;
+  }
+  nav .links ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2rem;
+  }
+  nav .links ul button {
+    padding: 1rem 2rem;
+  }
+  .starter {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 4rem;
+  }
+  .starter .info {
+    margin: 1rem;
+  }
+  .about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    gap: 1rem;
+  }
+  .about img {
+    max-width: 100%;
+  }
+  .contagion .cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .symptoms img {
+    width: 100% !important;
+  }
+  .solutions .content {
+    margin: 1rem;
+  }
+  .solutions .content .solution {
+    gap: 1rem !important;
+    margin-bottom: 1rem;
+  }
+  .solutions .content .solution:nth-child(odd) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .solutions .content .solution:nth-child(even) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .solutions .content .solution .solution-info {
+    gap: 0.5rem;
+  }
+  .solutions .content .solution .solution-info .round {
+    width: 15rem;
+    height: 3rem;
+    font-size: 22px;
+  }
+  .solutions .content .solution img {
+    height: 20rem !important;
+  }
+  .map {
+    margin: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .map .image-container img {
+    height: 11rem !important;
+  }
+  .map .reports {
+    width: 18rem;
+    padding: 1rem;
+  }
+  .contact {
+    margin: 2rem;
+    text-align: center !important;
+  }
+  .contact .form {
+    width: 100%;
+  }
+  .contact .form input {
+    width: 80%;
+    font-size: 0.8rem;
+  }
+  .contact .form button {
+    padding: 1rem 2rem !important;
+    top: 0.9rem !important;
+  }
+  footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2rem;
+  }
+  footer ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    font-size: 15px;
+  }
+  .virus,
+  .virus2,
+  .virus3 {
+    display: none;
+  }
+  .info .description {
+    width: 90% !important;
+  }
+  nav {
+    position: relative;
+    padding: 2rem;
+    margin: 0;
+  }
+  nav .responsive-toggle {
+    display: block !important;
+    position: absolute;
+    right: 5rem;
+  }
+  nav .responsive-toggle i {
+    font-size: 1.5rem;
+  }
+  nav .logo img {
+    height: 3rem;
+  }
+  nav .links {
+    position: absolute;
+    top: -40rem;
+    left: 0;
+    margin-top: 10rem;
+    background-color: white;
+    width: 100%;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 1rem 1rem;
+    padding: 2rem 0;
+    z-index: 99;
+  }
+  nav .links ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2rem;
+  }
+  nav .links ul button {
+    padding: 1rem 2rem;
+  }
+  .starter {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 4rem;
+  }
+  .about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    gap: 1rem;
+  }
+  .about img {
+    max-width: 100%;
+  }
+  .contagion .cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .symptoms img {
+    width: 100% !important;
+  }
+  .solutions .content {
+    margin: 1rem;
+  }
+  .solutions .content .solution {
+    gap: 1rem !important;
+    margin-bottom: 1rem;
+  }
+  .solutions .content .solution:nth-child(odd) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .solutions .content .solution:nth-child(even) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .solutions .content .solution .solution-info {
+    gap: 0.5rem;
+  }
+  .solutions .content .solution .solution-info .round {
+    width: 9rem;
+    height: 3rem;
+    font-size: 22px;
+  }
+  .solutions .content .solution img {
+    height: 20rem !important;
+  }
+  .map {
+    margin: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .map .image-container img {
+    height: 26rem !important;
+  }
+  .map .reports {
+    width: 28rem;
+    padding: 3rem;
+  }
+  .contact {
+    margin: 2rem;
+    text-align: center !important;
+  }
+  .contact .form {
+    width: 100%;
+  }
+  .contact .form input {
+    width: 80%;
+  }
+  .contact .form button {
+    padding: 1rem 2rem !important;
+    top: 0.7rem !important;
+    right: 4rem;
+  }
+  footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2rem;
+  }
+  footer ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
